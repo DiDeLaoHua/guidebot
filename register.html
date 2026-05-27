@@ -1,0 +1,109 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Регистрация в GuideBot — создайте аккаунт для расширенных возможностей">
+    <title>Регистрация — GuideBot</title>
+    <link rel="icon" href="images/ai-mascot.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Главное меню">
+            <a href="index.html" class="logo">
+                <img src="images/ai-mascot.png" alt="GuideBot" class="logo-img" loading="lazy">
+                <span class="logo-text">GuideBot</span>
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="referrals.html" class="nav-link">Платформы</a></li>
+                <li><a href="https://vk.com/club237806063" class="nav-link nav-vk" target="_blank" rel="noopener">
+                    <span class="vk-dot"></span>Открыть в VK
+                </a></li>
+                <li><a href="register.html" class="nav-link nav-register active">Создать аккаунт</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Открыть меню">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <img src="images/hero-bot.png" alt="Регистрация" class="auth-img" loading="lazy">
+                    <h1 class="auth-title">Создание аккаунта</h1>
+                    <p class="auth-subtitle">Получите доступ к расширенным функциям GuideBot</p>
+                </div>
+
+                <!-- Форма с inline-валидацией и измененным action -->
+                <form class="auth-form" action="404.html" method="POST" onsubmit="return handleRegister(event)">
+                    <div class="form-group">
+                        <label for="username" class="form-label">Имя пользователя</label>
+                        <input type="text" id="username" name="username" class="form-input"
+                               placeholder="Введите имя" required minlength="3" maxlength="32">
+                        <span class="form-error"></span>
+                        <span class="form-hint">От 3 до 32 символов</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Электронная почта</label>
+                        <input type="email" id="email" name="email" class="form-input"
+                               placeholder="example@mail.ru" required>
+                        <span class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Пароль</label>
+                        <input type="password" id="password" name="password" class="form-input"
+                               placeholder="Минимум 8 символов" required minlength="8">
+                        <span class="form-error"></span>
+                        <span class="form-hint">Минимум 8 символов, буквы и цифры</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm" class="form-label">Подтверждение пароля</label>
+                        <input type="password" id="confirm" name="confirm" class="form-input"
+                               placeholder="Повторите пароль" required>
+                        <span class="form-error"></span>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agree" name="agree" class="form-checkbox" required>
+                        <label for="agree" class="checkbox-label">
+                            Я согласен с <a href="404.html" class="link">условиями использования</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Зарегистрироваться</button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Уже знаком с ботом? <a href="index.html" class="link">На главную</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="images/ai-mascot.png" alt="GuideBot" class="footer-logo" loading="lazy">
+                <span>GuideBot v3.2</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://vk.com/club237806063" target="_blank" rel="noopener">VK-бот</a>
+                <a href="https://github.com/DiDeLaoHua/Guidebot" target="_blank" rel="noopener">GitHub</a>
+                <a href="index.html">Главная</a>
+            </div>
+            <p class="footer-copy">&#169; 2026 GuideBot — ИИ-агент для поиска гайдов</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

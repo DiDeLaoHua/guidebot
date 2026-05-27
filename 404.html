@@ -1,0 +1,84 @@
+<!-- 404.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Страница не найдена</title>
+    <link rel="icon" href="images/ai-mascot.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="error-page">
+
+    <!-- Шапка -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">
+                <img src="images/ai-mascot.png" alt="GuideBot" class="logo-img" loading="lazy">
+                <span class="logo-text">GuideBot</span>
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="referrals.html" class="nav-link">Платформы</a></li>
+                <li><a href="https://vk.com/club237806063" class="nav-link nav-vk" target="_blank" rel="noopener">
+                    <span class="vk-dot"></span>Открыть в VK
+                </a></li>
+                <li><a href="register.html" class="nav-link nav-register">Создать аккаунт</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Открыть меню">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="error-container">
+            <div class="error-visual">
+                <img src="images/404-bot.png" alt="Грустный робот 404" class="error-img" loading="lazy">
+                <div class="error-code">
+                    <span class="error-digit">4</span>
+                    <span class="error-digit error-digit-spin">0</span>
+                    <span class="error-digit">4</span>
+                </div>
+            </div>
+            <h1 class="error-title">Страница не найдена</h1>
+            <p class="error-desc">
+                Похоже, бот-гид заблудился в цифровом пространстве.
+                Давайте вернёмся на правильный путь!
+            </p>
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-primary">&#127968; На главную</a>
+                <a href="https://vk.com/club237806063" class="btn btn-secondary" target="_blank" rel="noopener">&#128172; Написать боту в VK</a>
+            </div>
+            <div class="error-hint">
+                <p>Или напишите боту прямо сейчас — он найдёт всё, что угодно!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Декоративные плавающие иконки -->
+    <div class="floating-shapes" aria-hidden="true">
+        <span class="shape shape-1">&#9881;</span>
+        <span class="shape shape-2">&#128269;</span>
+        <span class="shape shape-3">&#128172;</span>
+        <span class="shape shape-4">&#129302;</span>
+        <span class="shape shape-5">&#10067;</span>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="images/ai-mascot.png" alt="GuideBot" class="footer-logo" loading="lazy">
+                <span>GuideBot v3.2</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://vk.com/club237806063" target="_blank" rel="noopener">VK-бот</a>
+                <a href="https://github.com/DiDeLaoHua/Guidebot" target="_blank" rel="noopener">GitHub</a>
+                <a href="index.html">Главная</a>
+            </div>
+            <p class="footer-copy">&#169; 2026 GuideBot — ИИ-агент для поиска гайдов</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
