@@ -32,7 +32,7 @@ jobs:
       - name: Сборка статического сайта
         run: |
           mkdir -p _site
-          cp index.html chat.html register.html referrals.html 404.html .nojekyll _site/
+          cp index.html register.html referrals.html 404.html .nojekyll _site/
           cp -r css js _site/
           if [ -d images ]; then cp -r images _site/; fi
 
